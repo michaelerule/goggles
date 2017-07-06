@@ -1,0 +1,249 @@
+\documentclass[11pt]{scrartcl}
+
+\newenvironment{itemised}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+
+\usepackage{graphicx}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\usepackage[margin=0.72in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{txfonts}
+\usepackage{verbatim}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{indentfirst}
+
+
+\usepackage{titlesec}
+\titleformat{\subsubsection}[runin]% runin puts it in the same paragraph
+       {\normalfont\bfseries}% formatting commands to apply to the whole heading
+       {\thesubsection}% the label and number
+       {0.5em}% space between label/number and subsection title
+       {}% formatting commands applied just to subsection title
+       [:]% punctuation or other commands following subsection title
+
+\begin{document}
+\title{The Goggles}
+\subtitle{Kit information for James Rutter at AS220 Labs}
+\author{Michael Rule}
+\date{}
+\maketitle
+{\setlength{\parindent}{0cm}{This archive contains all information necessary to produce \emph{The Goggles} hallucination visor kits.}}
+\tableofcontents
+\newpage
+\section{Parts and sources}
+\subsection{Parts List}
+\begin{itemised}
+\item 1 Welding Goggles, "Fixed Front" with square window. Suggest: ``Crews'' brand from MRO supply.
+\item 3 1/4'' translucent acrylic laser-cut panels
+\begin{itemised}
+	\item 1 visor outer panel with quasicrystal design
+	\item 1 visor middle panel with LED placement markings
+	\item 1 visor inner panel with cutaway for wires
+	\end{itemised}
+	\item 1 2xAAA battery pack
+	\item 1 Visor controller printed circuit board
+	\item 1 pre-programmed AtTiny24 microcontroller chip
+	\item 1 14 pin DIP chip socket
+	\item 1 8-pin right angle male header
+	\item 2 4-pin female jumper cables
+	\item 2 RGB LEDs
+	\item 2 Indicator LEDs, 5 or 3mm, flexible options :
+	\begin{itemised}
+	\item 1 Blue LED, 1 Ultraviolet LED
+	\item 1 Color-Change LED, 1 LED with 3.3 forward voltage ( blue, UV, white, some green )
+	\end{itemised}
+	\item 2 68$\Omega$ resistors	
+	\item 1 10K$\Omega$ resistor   	
+	\item 4 6mm through-hole tactile switches
+	\item 1 toggle power switch ( small rocker style )
+	\item 1 4" to 6" length of 22 gauge wire
+	\item 2 60-100mm zip ties
+	\item 1 1x2'' (appx) velcro tape
+	\item 1 13x18 cm${}^2$ anti-static bag for packaging
+\end{itemised}
+\newpage
+\subsection{Sources}
+\subsubsection{Welding Goggles}
+Welding Goggles, ``Fixed Front'' with square window. It is important that the model of goggles be designed to fit up to three filter three filter lenses with a gap in the middle. We have previously used  \href{http://www.shoplet.com/Crews-Welding-Goggles-20050/SEPTLS13520050/spdv}{Crews 105-20050} welding goggles. They are the cheapest goggles that meet this requirement. Their price is between \$3 and \$10.   If you use a different product, get a sample and test whether the kit works with that design. MRO center has the best price if ordering large quantities, but their website is hard to navigate. I have seen this item listed twice on their website with over \$2 difference in price. Searching for "Crews Welding Goggles" through google seems to be good about finding the cheapest source.
+\subsubsection{1/4'' translucent acrylic laser-cut panels}
+You want the ``intermediate'' translucency quarter-inch acrylic panels. I picked mine up from RISD materials store. On some days, there is someone at the store who will cut large sheets down to laser cutter size for you. 
+If not, you will have to do it yourself using an acrylic knife or band saw. AS220 Epilog bed size is 18x22''. Cheap-Chinese mystery laser, which was used for the first production run, has a 12''x12'' bed size.
+\subsubsection{2xAAA battery pack}
+These are available from all electronic distributors ( Mouser, Digikey ), and also available wholesale from China via ebay. Current design uses an open-clip plastic model. The holes on the bottom of this model allow for some flexibility when mounting, and the 3D printed parts have been designed with this form in mind. The small size also lets you keep the batteries on the inside, if you wish.
+\subsubsection{Visor controller printed circuit board}
+These much be orderd from GoldPhoenix online. The smallest order is 93 boards for USD114. The necessary EagleCad and Gerber files are in this archive. Instructions for purchasing a batch from GoldPoenix can be found on their website. Payment is through PayPal, with ``mass payment'' providing a USD3 discount. Lead time is approximately two weeks.
+\subsubsection{pre-programmed AtTiny24 microcontroller chip}
+Any of AtTiny24/44/84 will work with this design. I purchase through Mouser.
+\subsubsection{14 pin DIP chip socket}
+A socket for the microcontroller is not mandatory, but is convenient. It reduces the chance of destroying the microcontroller while soldering, especially for less experienced solderers, and makes it easier to reprogram the device ( although in-place programming is possible with this circuit ). I purchased these from Mouser but they are also very cheap from Futurlec. Ebay is sometimes the best price for this component, after considering shipping.
+\subsubsection{8-pin right angle male header}
+There are at least three versions of single-row right-angle male break-away headers floating around. We want the ones that Sparkfun sells. These have a plastic buffer that raises the pins to the perfect height to accept a female 4-pin jumper. Check datasheets before you buy. My first order from Futurlec provided headers that were unsuitable. 
+\subsubsection{4-pin female jumper cables}
+These are not available from any of the major domestic distributors. Ideally, you are looking for 20cm ( 200mm ) long cables, although 30cm may be tolerable. Most of the 30cm cables will be loose wires in an ugly color. \href{http://www.seeedstudio.com/depot/4-pin-dualfemale-jumper-wire-300mm-5-pcs-pack-p-97.html}{Seed studio has them for USD0.60}. \href{http://www.elechouse.com/elechouse/index.php?main_page=product_info&cPath=105_108&products_id=433}{Elechouse is also USD0.60}. \href{http://www.aliexpress.com/store/product/4-Pin-Dual-female-Jumper-Wire-wire-length-200mm-5pcs-bunch/505390_539192964.html}{Ali express has them for USD0.21, but they double their prices in shipping}. Ebay still seems to be the cheapest option. 
+\subsubsection{Indicator LEDs} There is flexibility in the indicator LEDs. Both 3mm and 5mm sizes fit, although 3mm fits and looks better. The LEDs need to be able to tolerate up to 3.3V forward volatage, which wil limit you to blue, violet, white, and color-changing LEDs. Color-changing LEDs are cool but expensive. If you use a color changing LED for the play/shuffle indicator, it will be phase reset frequenty -- which may or may not be desirable. 
+\subsubsection{Other Components} The remaining components are available from any major distributor, but again, the best prices appear to be on Ebay with no obvious loss in quality.
+
+\subsection{Costs}
+Table 1 outlines an optimistic cost estimate for sourcing 93 kits. Most of the cost lies in the boards, the goggles themselvs, laser cutting, microcontrollers, and the jumper wires to the RGB LEDs. A good strategy is to purchase cheap components in lots of 100 then purchase more expensive items as needed. Prices based on a sale for the welding goggles which may not always be available.
+\begin{table}[h]
+\centering
+\begin{tabular}{llllllll}
+Item & Source & cost & units & \$/item & items & unit cost\\
+\toprule
+6mm tactile switch & Ebay & \$16.00 & 400 & 4 & 100 & \$0.17\\
+PCB & GoldPhoenix & \$114.00 & 93 & 1 & 93 & \$1.23\\
+10k resistor & Ebay & \$1.50 & 100 & 1 & 100 & \$0.02\\
+68ohm resistor & Ebay & \$3.69 & 200 & 2 & 100 & \$0.04\\
+LED1 & Ebay & \$7.80 & 100 & 1 & 100 & \$0.08\\
+LED2 & Ebay & \$5.80 & 100 & 1 & 100 & \$0.06\\
+RGB LED & Ebay & \$28.50 & 200 & 2 & 100 & \$0.31\\
+14 pin DIP socket & Ebay & \$6.70 & 100 & 1 & 100 & \$0.07\\
+4 pin 20cm f-f jumpers & aliexpress & \$94.92 & 200 & 2 & 100 & \$1.02\\
+attiny24 & Mouser & \$88.20 & 100 & 1 & 100 & \$0.95\\
+rocker switch & Ebay & \$18.89 & 100 & 1 & 100 & \$0.20\\
+right-angle male headers & Sparkfun & \$50.00 & 100 & 1 & 100 & \$0.54\\
+battery holder & Ebay & \$27.99 & 100 & 1 & 100 & \$0.30\\
+crews welding goggles & MRO supply & \$360.64 & 100 & 1 & 100 & \$3.88\\
+bags & Ebay & \$15.89 & 100 & 1 & 100 & \$0.17\\
+anti static foam & Ebay & \$68.75 & 100 & 1 & 100 & \$0.74\\
+acrylic & AS220 & \$100.00 & 100 & 1 & 100 & \$1.08\\
+batteries & Ebay & \$44.99 & 200 & 2 & 100 & \$0.48\\
+velcro & Ebay & \$8.74 & 100 & 1 & 100 & \$0.09\\
+zip ties & Ebay & \$2.43 & 200 & 2 & 100 & \$0.03\\
+ \bottomrule
+TOTAL & & \$1,065 & & & 93 & \$11.46\\
+\end{tabular}
+\caption{Highly optimistic cost estimate using all lowest cost sources}
+\label{}
+\end{table}
+
+
+\newpage
+\section{Firmware source code and uploading}
+The source for The Goggles firmware is in the \emph{software} sub-directory.
+You need linux, avr-gcc, avrdude, and an AVR-ISP MkII to compile and upload. Uploading instructions are in a comment in the header of the source. The pinouts for connecting the AtTiny to an AVR ISP MkII are repeated below.
+\begin{description}
+\item[goggles-24.c] Default flicker-hallucination program for AtTiny24.
+\item[goggles-24-calm.c] Opens with constant color patches in case you want a partial ganzfeld, no flickering. 
+\end{description}
+The script "go" runs on linux-like systems ( require sh ) and does the following : 
+\begin{itemised}
+\item checks to see if your AVR is connected
+\item compiles the source code
+\item strips the source code down for transfer
+\item copies the source code to the AVR
+\end{itemised}
+Things that might change :
+\begin{itemised}
+\item "go" assumes that you are using avrispmkII
+\item "go" assumes that you are using AtTiny24. Adjust flags accordingly if not.
+\item "go" assumes your programmer lies at /dev/ttyUSB0, this may change, especially on macs.
+\end{itemised}
+\begin{verbatim}
+    AtTiny24 pinout:               Programmer pinout, 
+                                           6 pin:               10 pin:
+                __ __
+    3     VCC -|  U  |- GND    1     6 MISO +-+  VCC 3    3 vcc  +-+   MOSI 2
+      BCK PB0 -|     |- PA0 G1       5 SCK  + + MOSI 2           + +    
+      SHU PB1 -|     |- PA1 B1       4 RST  +-+  GND 1           + +]  RST  4
+    4 RST PB3 -|     |- PA2 R1                                   + +   SCK  5 
+      PLY PB2 -|     |- PA3 G2                            1 gnd  +-+   MISO 6
+      FWD PA7 -|     |- PA4 B2 5 
+    2 IND PA6 -|_____|- PA5 R2 6 
+    
+    Circuit:                                  __ __
+                                         VCC-|  U  |-GND
+              R-GBR-GB                GND-/ -|     |-----\
+     _________||||||||___             GND-/ -|     |------(RGB1)-GND
+    |o+++++++ |  ||  |  o|           VCC-www-|     |-www-/
+    | +++++++ |__||__|(i)|            GNd-/ -|     |-----\
+    |= [x] [<] [=] [>](p)|            GNd-/ -|     |------(RGB2)-GND
+    |o__________________o|        GND-(LED1)-|_____|-www-/
+
+                                         VCC-(LED0)-GND
+\end{verbatim}
+
+The buttons are as follows, from left to right :
+\begin{itemised}
+\item[$\times$] Shuffle      : if playing, toggle shuffled playback, else skip to random
+\item[$<$] Skip Back    : skips to the previous light patch
+\item[$=$] Play/Pause   : toggles automatic advancing through patches
+\item[$>$] Skip Forward : advances to the next light patch
+\end{itemised}
+
+LEDs indicate :
+\begin{itemised}
+\item[i] -- indicator LED. on if playing, flashing if playing+shuffle
+\item[p] -- power LED, on if powered on. 
+\end{itemised}
+ 
+
+\newpage
+\section{CAD Files and instructions}
+\subsection{Laser Cutting}\noindent Laser cutting .svg files are in the \emph{laser cut} sub-directory. The Goggles require 3 laser cut panels
+\begin{itemised}
+\item quasicrystal or blank patterned exterior panel
+\item middle panel with LED placement marks
+\item inner panel with notch for wiring
+\end{itemised}
+The outer and LED panels are cut in two passes. 
+\begin{itemised}
+\item shallow low-power pass etches vector graphics
+\item high-power pass cuts out outline
+\end{itemised}
+These parts should be cut out of medium translucency 1/8'' acrylic.
+Some files have both graphic and outline cuts and must be separated to cut. 
+Both passes are vector cuts, not raster graphics. 
+Some files have multiple panels with redundant edges removed for fast cutting. 
+I suggest making a custom panel with this technique to fit the bed size.
+There are also blank panels that can be used as templates for custom graphics.
+
+\subsection{3D printing}
+The sub-directory \emph{3d printed} contains two .stl files.
+3D printed parts are not a core part of the kit, but rather an extension that
+some with access to a 3D printer may want to print or build upon. 
+These files contain a bracket for the batteries and board,
+as well as a button pad to overlay the board. 
+I recommend printing with very little (no) infill, and one or two shells,
+using a translucent plastic ( natural ABS will work ) to let the indicator lights
+shine through.
+
+\subsection{PCB manufacture}
+EagleCad design and Gerber files are in the \emph{PCB} sub-directory. The 'board.zip' archive contains everything needed to order from goldphoenix. Send that archive as-is to order more boards. Goldphoenix offers 1000cm${}^2$ for \$114, which gives you 93 boards at about \$1.25/board.
+
+\section{Media}
+
+\begin{description}
+\item[media/instructions] HTML and PDF assembly instructions
+\item[media/instructions/insert] Packaging insert
+\item[media/artwork] Custom artwork, (c) Austin Redwood, Michael Rule
+\item[media/photos] Assembly photos
+\item[media/journal.pcbi.1002158.pdf] PLoS computational biology flicker-hallucination paper writeup
+\item[media/writeup/optimistic\_cost\_estimate.ods] spreadsheet for cost table in this document
+\item[media/writeup] source code for this document
+\end{description}
+\end{document}

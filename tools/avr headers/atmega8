@@ -1,0 +1,54 @@
+Hardware notes
+===============================================================================
+
+DDRx   : 1 = output, 0 = input
+PORTx : output buffer
+PINx  : digital input buffer ( writes set pullups )
+                          __ __
+         !RESET     PC6 -|  U  |- PC5
+                    PD0 -|     |- PC4
+                    PD1 -|     |- PC3
+                    PD2 -|     |- PC2
+                    PD3 -|  m  |- PC1
+                    PD4 -|  3  |- PC0
+                    VCC -|  2  |- GND
+                    GND -|  8  |- AREF
+                    PB6 -|     |- AVCC
+                    PB7 -|     |- PB5   SCK  ( yello )
+                    PD5 -|     |- PB4   MISO ( green )
+                    PD6 -|     |- PB3   MOSI ( blue )
+                    PD7 -|     |- PB2
+                    PB0 -|_____|- PB1
+
+        Programmer pinout, 6 pin:
+                
+        6 MISO +-+  VCC 3
+        5 SCK  + + MOSI 2 
+        4 RST  +-+  GND 1
+        
+        Programmer pinout, 6 pin, linear:
+                
+        6 MISO +  
+        5 SCK  + 
+        4 RST  +  
+        VCC 3  +
+        MOSI 2 +
+        GND 1  +
+
+        Programmer pinout, 10 pin:
+                
+        3 vcc  +-+   MOSI 2
+               + +    
+               + +]  RST  4 
+               + +   SCK  5 
+        1 gnd  +-+   MISO 6
+        
+    PORT : write to here to set output
+    DDR  : write to here to set IO. 1 for output.
+    PIN  : pull ups ? digital input ?
+
+thanks to http://brownsofa.org/blog/archives/215 for explaining timer interrupts
+
+avrdude -c avrispmkII -p m328p -B100 -P /dev/ttyUSB0 -U lfuse:w:0xE2:m -U hfuse:w:0xD9:m -U efuse:w:0xFF:m -F
+avrdude -c avrispmkII -p m328p -B100 -P /dev/ttyUSB0 -U lfuse:w:0xE2:m 
+avrdude -c avrispmkII -p m328p -B1000 -P /dev/ttyUSB0 -F

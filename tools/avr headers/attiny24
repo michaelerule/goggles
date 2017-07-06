@@ -1,0 +1,38 @@
+Hardware notes
+===============================================================================
+
+	DDRx   : 1 = output, 0 = input
+	PORTx : output buffer
+	PINx  : digital input buffer ( writes set pullups )
+	Port B is the chip IO port ( other ports are control registers )
+
+		AtTiny24 pinout:
+		            __ __
+		3     VCC -|  U  |- GND    1
+		  BCK PB0 -|     |- PA0 G1
+		  SHU PB1 -|     |- PA1 B1
+		4 RST PB3 -|     |- PA2 R1
+		  PLY PB2 -|     |- PA3 G2 
+		  FWD PA7 -|     |- PA4 B2 5
+		2 IND PA6 -|_____|- PA5 R2 6
+		        
+		Programmer pinout, 6 pin:
+		        
+		6 MISO +-+  VCC 3
+		5 SCK  + + MOSI 2 
+		4 RST  +-+  GND 1
+		
+		Programmer pinout, 10 pin:
+		        
+		3 vcc  +-+   MOSI 2
+		       + +    
+		       + +]  RST  4 
+		       + +   SCK  5 
+		1 gnd  +-+   MISO 6
+		
+	PORT : write to here to set output
+	DDR  : write to here to set IO. 1 for output.
+	PIN  : pull ups ? digital input ?
+
+thanks to http://brownsofa.org/blog/archives/215 for explaining timer interrupts
+

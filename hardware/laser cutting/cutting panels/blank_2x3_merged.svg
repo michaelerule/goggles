@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0"
+	 id="svg2" inkscape:output_extension="org.inkscape.output.svg.inkscape" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:version="0.32" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" sodipodi:docname="LED_2x4.svg" inkscape:version="0.46" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="782.469px"
+	 height="748.518px" viewBox="0 0 782.469 748.518" enable-background="new 0 0 782.469 748.518" xml:space="preserve">
+<defs>
+	
+	
+		<inkscape:perspective  id="perspective35" inkscape:vp_z="567.81738 : 410.56467 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:persp3d-origin="283.90869 : 273.70978 : 1" sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 410.56467 : 1">
+		</inkscape:perspective>
+	<inkscape:path-effect  effect="spiro" id="path-effect3941" is_visible="true"></inkscape:path-effect>
+	<inkscape:path-effect  effect="spiro" id="path-effect3941-2" is_visible="true"></inkscape:path-effect>
+	<inkscape:path-effect  effect="spiro" id="path-effect3941-1" is_visible="true"></inkscape:path-effect>
+	<inkscape:path-effect  effect="spiro" id="path-effect3941-2-1" is_visible="true"></inkscape:path-effect>
+	<inkscape:path-effect  effect="spiro" id="path-effect3941-1-7" is_visible="true"></inkscape:path-effect>
+	<inkscape:path-effect  effect="spiro" id="path-effect3941-2-1-2" is_visible="true"></inkscape:path-effect>
+	<inkscape:path-effect  effect="spiro" id="path-effect23631" is_visible="true"></inkscape:path-effect>
+	<inkscape:path-effect  effect="spiro" id="path-effect23629" is_visible="true"></inkscape:path-effect>
+	
+		<inkscape:perspective  id="perspective37" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 526.18109 : 1">
+		</inkscape:perspective>
+</defs>
+<sodipodi:namedview  units="cm" id="namedview4" inkscape:window-maximized="1" borderopacity="1" pagecolor="#ffffff" bordercolor="#666666" objecttolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:zoom="0.5" fit-margin-bottom="0.2" fit-margin-right="0.2" fit-margin-top="0.2" fit-margin-left="0.2" inkscape:current-layer="g8680" inkscape:window-y="0" inkscape:window-x="4" inkscape:cy="498.57664" inkscape:cx="222.4204" gridtolerance="10" showgrid="false" inkscape:window-width="1280" inkscape:window-height="778">
+	</sodipodi:namedview>
+<g id="g3970">
+</g>
+<g id="Default" transform="matrix(2.757182e-2,0,0,-2.757182e-2,-213.253,575.99534)">
+	<desc  id="desc32263">Master slide</desc>
+</g>
+<g>
+	<g>
+		<path id="rect8807_7_" fill="none" stroke="#FF0000" stroke-width="3" d="M374.878,186.19c4.975,0,8.979-4.005,8.979-8.979V9.292
+			c0-4.975-4.006-8.979-8.979-8.979H3.292c-4.975,0-8.98,4.005-8.98,8.979v167.919c0,4.975,4.005,8.979,8.98,8.979"/>
+	</g>
+	<g>
+		<path id="rect8807_9_" fill="none" stroke="#FF0000" stroke-width="3" d="M383.858,195.17c0-4.975-4.007-8.979-8.98-8.979"/>
+		<path id="rect8807_28_" fill="none" stroke="#FF0000" stroke-width="3" d="M374.877,372.068c4.975,0,8.98-4.005,8.98-8.979V195.17
+			"/>
+		<path id="rect8807_15_" fill="none" stroke="#FF0000" stroke-width="3" d="M3.292,186.19c-4.975,0-8.98,4.005-8.98,8.979v167.919
+			c0,4.975,4.005,8.979,8.98,8.979"/>
+		<path id="rect8807_1_" fill="none" stroke="#FF0000" stroke-width="3" d="M374.877,186.19H3.292"/>
+	</g>
+	<g>
+		<path id="rect8807_18_" fill="none" stroke="#FF0000" stroke-width="3" d="M3.292,372.068c-4.975,0-8.98,4.005-8.98,8.979v167.919
+			c0,4.976,4.005,8.979,8.98,8.979h371.585c4.975,0,8.98-4.005,8.98-8.979V381.048c0-4.975-4.007-8.979-8.98-8.979"/>
+		<path id="rect8807_3_" fill="none" stroke="#FF0000" stroke-width="3" d="M374.877,372.068H3.292"/>
+	</g>
+	<g>
+		<path id="rect8807_16_" fill="none" stroke="#FF0000" stroke-width="3" d="M374.878,557.947"/>
+		<path id="rect8807_31_" fill="none" stroke="#FF0000" stroke-width="3" d="M3.292,557.946"/>
+		<path id="rect8807_5_" fill="none" stroke="#FF0000" stroke-width="3" d="M374.877,557.946"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path id="rect8807_8_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,177.211c0,4.975,4.005,8.979,8.979,8.979
+			h371.585c4.975,0,8.979-4.005,8.979-8.979V9.292c0-4.975-4.006-8.979-8.979-8.979H393.081c-4.976,0-8.979,4.005-8.979,8.979"/>
+		<path id="rect8807_24_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,177.211"/>
+		<path id="rect8807_23_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,9.292"/>
+	</g>
+	<g>
+		<path id="rect8807_14_" fill="none" stroke="#FF0000" stroke-width="3" d="M394.405,186.19h-1.324"/>
+		<path id="rect8807_26_" fill="none" stroke="#FF0000" stroke-width="3" d="M394.405,186.19"/>
+		<path id="rect8807_25_" fill="none" stroke="#FF0000" stroke-width="3" d="M764.666,186.19"/>
+		<path id="rect8807_11_" fill="none" stroke="#FF0000" stroke-width="3" d="M393.081,372.068h371.585
+			c4.975,0,8.98-4.004,8.98-8.979V195.17c0-4.975-4.007-8.979-8.98-8.979"/>
+		<path id="rect8807_10_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,363.089c0,4.975,4.005,8.979,8.979,8.979"/>
+		<path id="rect8807_27_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,363.089"/>
+		<path id="rect8807_20_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,195.17"/>
+		<path id="rect8807_6_" fill="none" stroke="#FF0000" stroke-width="3" d="M393.081,186.19c-4.976,0-8.979,4.005-8.979,8.979"/>
+	</g>
+	<g>
+		<path id="rect8807_29_" fill="none" stroke="#FF0000" stroke-width="3" d="M393.081,372.068c-4.976,0-8.979,4.006-8.979,8.98"/>
+		<path id="rect8807_19_" fill="none" stroke="#FF0000" stroke-width="3" d="M764.666,372.068"/>
+		<path id="rect8807_12_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,548.967c0,4.976,4.005,8.98,8.979,8.98
+			h371.585c4.975,0,8.979-4.006,8.979-8.98V381.049c0-4.975-4.006-8.98-8.979-8.98"/>
+		<path id="rect8807_30_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,548.967"/>
+		<path id="rect8807_21_" fill="none" stroke="#FF0000" stroke-width="3" d="M384.101,381.049"/>
+	</g>
+	<g>
+		<path id="rect8807_32_" fill="none" stroke="#FF0000" stroke-width="3" d="M393.081,557.947"/>
+		<path id="rect8807_2_" fill="none" stroke="#FF0000" stroke-width="3" d="M764.666,557.947"/>
+		<path id="rect8807_4_" fill="none" stroke="#FF0000" stroke-width="3" d="M393.081,557.947"/>
+	</g>
+</g>
+</svg>

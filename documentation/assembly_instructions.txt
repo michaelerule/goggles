@@ -1,0 +1,163 @@
+Assembly Instructions
+
+Take a look at these pictures of the finished project to get a good idea of how everything is going to fit together when it's done.
+
+
+Phase 1: The board
+
+Prepare you soldering station and heat up your soldering iron. 
+
+Make sure you have all parts pictured here. Listed from top to bottom, left to right, in the picture shown :
+
+A   1 5" length of 22 gauge wire
+B   2 RGB LEDs
+D   2 68Ω resistors
+C   1 10KΩ or 100KΩ resistor
+E   1 2xAAA battery pack
+F   1 pre-programmed AtTiny24 microcontroller
+G   1 14 pin DIP chip socket
+H   1 8-pin right angle male header
+I   1 Visor controller printed circuit board
+J   1 Blue LED
+K   1 Ultraviolet LED
+L   1 toggle power switch
+M   4 tactile switches
+N   2 4-pin female jumper cables
+
+Locate the three resistors and bend the leads at a right angle close to the body, as shown. The LED resistors are 68ohm ( blue grey black gold ). The reset pull-up resistor is 100Kohm ( brown black orange gold ). However, as these were ordered from China, the markings are a bit unusual, and instead look like brown, black, black, orange, gold. The resistor value is, however, correct. Insert the resistors into the board. The two 68 ohm resistors go on the right, at shown, in the slots marked "LED". The reset pull-up resistor goes in the slot on the left marked "10k". Optionally bend the leads outward to hold the resistors in place while you solder them. Solder the resistors, and trim the excess leads with a wire cutter.
+
+Place the 8-pin right-angle connector for the RGB LED cables as shown. Note that the plastic part of the header should surround the part of the header that is parallel to the board. Turn the board over and solder the 8-pin right angle connector. A common trick to get the connector flush against the board is to solder one pin. Then, melt that solder joint while pressing the connector flush against the board, and let it cool again. Solder the remaining pins.
+
+Place the tactile switches on the board as shown. Note that, if the tactile switches are places sideways, the board will not function. 
+
+Solder the chip socket. Note that there is a U shaped notch in one side of the socket. This indicates the orientation of the socket. Place the socket so that this notch is on the left as shown. One trick to get the socket flush against the board is to solder one corner pin, then melt that solder joint, position the socket so that it is flush, and let the joint cool. Then, do the same thing on the opposite corner. The socket is now held in place, leaving you free to solder the remaining pins.
+
+Solder the indicator LEDs. It is important to insert these LEDs in the correct direction, otherwise they will not light. The LED has two leads. One leads is the "ground" LED. This lead will be shorter. IF you look closely at the plastic part of the LED, the base on one side will be flat. This also indicates the side of the LED with ground lead. In our case, thr ground lead should be at the top, as pictured here. Solder both indicator LEDs. One will be purple and one will be blue, but it does not matter which one goes where.
+
+Trim any extra leads sticking out of the bottom of the board with wire snips.
+
+Locate the AtTiny24 microcontroller chip. Note that one end of the chip has a U shaped notch, just like the socket. This indicates the orientation of the chip, and its important to insert the chip in the correct direction, otherwise the board will not work. The notch should be on the left as pictured. Carefully insert the microcontroller into its socket.
+
+
+
+B : the goggles.
+
+We are going to modify a pair of welding goggles to make the Visor. 
+
+Slide the outer bracket of the goggles, and remove the tinted and clear plastic plates from the welding goggles. Leave the metal bracket.
+
+Locate the translucent white plastic pieces that came with your kit. There should be three of them. One has a small notch cut into the side. This notch is for with LED wired, and will go inside. Another has a picture of some LEDs etched into the surface. This is the inner panel, and you will attach the LEDs to its surface. The third has a decorative pattern etched into its surface. This panel goes on the outside. 
+
+Stack the inner panel on top of the decorative panel, so that the LED markings are on the bottom surface and the decorative markings are on the top. Place these pieces into the goggles where the tinted plastic used to be, and slide the bracket closed again. You should see a decorative pattern on the front of the goggles, and markings for positioning the LEDs on the inside of the goggles.
+
+
+Get out your x-acto or hobby knife, and do be careful.
+
+We are going to make some cuts into the goggles to pass wires through, and also a place to hold the power switch. 
+
+Observe the markings in this picture. You can attach the electronics in many creative ways, but this is the way I assembled it. Wherever you decide to place the board, cut a small slit for the power wires near the power connector on the board ( the one remaining un-soldered place on the board ). Also, at some distance away from the 8 pin right angle connector for the LEDs, cut a 3/4" 1.5cm long slit for the LED cables. 
+
+The power switch is best placed at the top, as pictured. Draw a rectangluar outline slightly smaller than the top of the power switch, and remove it with a x-acto knife. Try to insert the power switch into the hole for a test, and adjust the size of the hold if necessary.
+
+
+
+Solder the red (+) wire from the battery pack onto one lead of the power switch, and the red jumper wire onto the other. Insert the power switch into the goggles as shown below.
+
+Run the black ( -, ground ) wire from the batter pack, as well as the red (+) jumper wire connected to the switch, out through the slit you made for the power cables. 
+
+We are going to solder the power wires into the board. Wires that are soldered directly onto the board often come loose. One simple way to make the connection stronger is to tie the wires to the board before you solder them. If you find this too challenging, it is not strictly necessary, as there shouldn't be too much strain on the power wires in typical use. 
+
+Solder the power cables as shown, making sure that the red (+) wire goes into the hole labeled "+3v", and the black (-) wire in the other pad with the filled in white marking. Optionally, use the knot trick as shown to reduce strain on this solder connection.
+
+If you have two AAA batteries, you can put them in the battery holder and turn on the power switch to see if the boiard works. The power-on LED should light up if everything is working correctly. If this does not happen, you will need to troubleshoot the board. Check that the indicator LEDs are inserted in the correct orientation, and that the red (+) wire from the batter is indeed connection to the +3v marked pad on the board. Look for loose or broken solder connections, and make sure the batteries you are using to test are charged.
+
+
+Next, we are going to wire up and place the red, green, and blue (RGB) LEDs which generate the flickering light pattern.
+
+Attach the jumper cables for the LEDs to the 8-pin connection as shown below. Their orientation does not matter, though for consistancy you should orient them the same way. Pat attention to the markings underneath the header, which have the labels "R", "G", and "B" for "red", "green", and "blue" color channels, as well as a filled-in white region indicating the groun (-) pin for the LEDs. You will want to rememebr which color wire corresponds to the ground pins for later.
+
+Thread the jumper cables one after another through the slit you prepared earlier.
+
+The inside of the goggles should now look something like this. Next we're going to insert the colored LEDs into the viewing area. These are the LEDs with four leads. In order, these leads are R(ground)GB. Examine the RGB LEDs closely. Like the indicator LEDs, one side of the plastic housing is flat on the bottom. As before, this indicates the side of the LED with the ground lead. You will want to insert the LEDs into the jumper cables such that the ground lead of the LED matches up with whicever color wire is the ground wire, which was noted in the previous step. 
+
+You may optionally want to trim the LED leads to all the same length to make inserting the LEDs into the jumpers easier, or to adjust the spacing between the LEDs.
+
+Turn on the goggles and test that the RGB LEDs are working. The first pattern on the goggles is a white flickering stimulus. If either LED does not appear white, you may have some missed connections. Try adjuting the LEDs and trimming the leads slightly if you are not getting a connection. If that fails, check that the jumpers are placed securely on the board header, and that the board header is soldered completely. If all color channels of both LEDs are working, turn of the goggles and proceed. 
+
+Now, glue the LEDs in place as indicated by the etched markings, and as demonstrated here. Either super glue or hot glue will work. I found the gluing the ends of the jumpers together with a bit of super glue first made positioning easier. You may want to tack down the LED wires as shown to keep them in place. 
+
+Insert the inner translucent plastic piece, feeding the wires out through the notch provided.
+
+You're goggles are nearly complete ! The only thing left to do is to tie down some loose ends and hold everything in place.
+
+Glue the battery pack in position as shown. 
+
+Optionally glue the circuit board down to the outside of the goggles, or use the holes provided for other fasteners, perhaps zip ties. 
+
+Organize the wires on the inside and move them out of the field of view. Tack everything down with some glue to hold it in place.
+
+Thats it, you're done!
+
+Power on the goggles and take note of the tacticle switches. They are, in order
+
+-- shuffle
+-- -- will jumpt to a random preset 
+-- previous
+-- -- will jump to the previous preset
+-- play / pause
+-- -- toggles automatic advancements through presets
+-- next
+-- -- will jump to the next preset
+
+
+
+so, with that in mind, put on the goggles and take them for a spin 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

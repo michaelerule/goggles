@@ -1,0 +1,4 @@
+avrdude -c avrispmkII -p t24 -P /dev/ttyUSB0 && \
+avr-gcc -mmcu=attiny24 -Os ./goggles-24-calm.c -o a.o && \
+avr-objcopy -j .text -j .data -O binary a.o a.bin && \
+avrdude -c avrispmkII -p t24 -P /dev/ttyUSB0 -U flash:w:a.bin

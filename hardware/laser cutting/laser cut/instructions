@@ -1,0 +1,17 @@
+The Goggles require 3 laser cut panels
+
+1 : quasicrystal or blank patterned exterior panel
+2 : middle panel with LED placement marks
+3 : inner panel with notch for wiring
+
+About these files : 
+
+The outer and LED panels are cut in two passes. 
+1 : shallow low-power pass etches vector graphics
+2 : high-power pass cuts out outline
+Some files have both cuts in the same file and must be separated to print. 
+Both passes are vector cuts, no raster graphics. 
+
+Some files have multiple panels with redundant edges removed for fast cutting. 
+I suggest making a custom panel with this technique to fit the bed size.
+There are also blank panels that can be used as templates for custom graphics.

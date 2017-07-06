@@ -1,0 +1,61 @@
+<html>
+<body>
+<h3>Geometric hallucinations induced by flickering light</h3>
+Most people see colorful geometric patterns when looking at uniform 
+flickering lights of a certain frequency. These patterns are subjectively 
+described as &quot;checkerboards&quot; &quot;ripples&quot; &quot;starbursts&quot; &quot;honeycombs&quot;, sometimes 
+taking on an overall tunnel-like appearance. It is striking how universal 
+these patterns are – these simple flicker-induced geometric hallucinations 
+are similar across individuals, and similar to certain visual 
+hallucinations seen in visual-triggered epilepsy, migraine auras, and 
+hallucinogens. A simple way to achieve such hallucinations is to close 
+one's eyes and face toward the sun. Then, with fingers outstretched and 
+separated, wave the hand back and forth in front of the eyes. Your fingers 
+will create a flickering of the sunlight, which will be diffused and made 
+uniform by closed eyelids.
+<br>
+<h3>The shortest primer on the brain and visual system ever</h3>
+To understand why flickering lights might trigger geometric hallucinations, and why the hallucinations should take on particular forms, we need to understand a little about the nervous system. A good review is beyond the scope of this article, but I attempt to give a short overview here.
+<br><br>
+Very briefly, the eye and the brain contain cells called neurons which are specialized for computation. Neurons communicate with each other in little all-or-nothing events called action potentials or &quot;spikes&quot;, which propagate along long &quot;wires&quot; called axons, extending away from the cell body. These spikes are picked up by other neurons with more local tree of wires called &quot;dendrites&quot;. When discussing a large number of neurons, people sometime just think of their average &quot;firing rate&quot; or &quot;activity&quot;, rather than individual spikes.
+<br><br>
+Early visual processing relates to the sort of geometric hallucinations that we can get out of the early visual system. Light enters the eyes and is picked up by photoreceptor cells. These cells communicate to neurons in the retina that compress visual input. We will focus on four aspects of this compression related to flicker induced geometric visual hallucinations:
+<br>
+1. The RGB color-space picked up by the photo-receptors is converted to three contrasts : light-dark, yellow-blue, and red-green. The color-space conversion relates to how, for instance, a red-green flicker is especially effective at eliciting hallucinations.
+<br><br>
+2. The image is converted to a form focusing on edges and contrasts –  uniform areas are ignored. This band-pass nature of early visual processing relates to how neurons are connected in the visual cortex, which in turns determines what size &quot;waves&quot; might appear in geometric visual hallucinations.
+<br><br>
+3. The retina has band-pass properties in time as well: slowly changing visual inputs are not registered. This is important for the temporal aspect of flicker induced hallucinations. Certain speeds of flickering will be picked up and transmitted better.
+<br><br>
+4. The eye has the greatest resolution in the very center, and the resolution drops off toward the periphery. This is why, for example, it is difficult to read things out of the corner of your eye. The brain also devotes less space to processing the periphery. The way that the visual field is &quot;unfolded&quot; in the brain determines the subjective appearance of spontaneous ( hallucinated ) neural activity.
+<br>
+<h3>A theory of geometric visual hallucinations</h3>
+A theory on the origin of geometric visual hallucinations comes from Ermentrout and Cowen (1979), and briefly, makes the following hypotheses:
+<ul>
+<li>The tunnel-like appearance of the overall hallucination relates to how the brain maps the visual field.
+<li>Patterns like checkerboards and honeycombs arise from superposition of multiple waves
+<li>Local interactions in the brain generate wave-like patterns of activity
+</ul>
+The two halves of the visual field are split apart and each processed in one half of the brain. The brain devotes more processing power toward the center of the visual field. The net effect is to &quot;unfold&quot; the circular visual field from the retina into a &quot;strip&quot; of the brain at the back called the primary visual cortex. The result is that tunnel-like visual inputs map to simple regular patterns in the brain, and the inverse: hallucinated simple regular patterns in visual cortex are subjectively experienced as tunnel-like visual inputs.
+<br>
+<center><img src ='brain1.png' width=500 /></center>
+<br><br>
+<center><img src ='brain.png' width=600 /></center>
+<br>
+Stripe-like waves of activity in the brain are sufficient to explain circular, spiral, and starburst hallucinations. Checkerboards can be explained as the sum of two waves at right-angles, and honeycombs can be explains as the sum of three evenly spaced plane waves.
+<br>
+<center><img src ='flicker_redo_1.png' width=500 /></center>
+<br>
+As to why the brain should spontaneously form waves of activity – that is something of an open question. Qualitatively, one can of it as the brain trying to &quot;find&quot; patterns in an image. Under certain circumstances, the pattern finding circuitry becomes unstable, and tends toward these simple, wave-like patterns. 
+<br>
+<h3>Driving the brain with a uniform, flickering input</h3>
+<br>
+Flickering light is believed to excite patterns using a resonance effect that pushes visual cortex outside of its normal operation. Neural activity in the brain oscillates spontaneously. There is a natural 8-12Hz oscillation in the visual system called the &quot;alpha rhythm&quot;. Providing visual input at this frequency is believed to excite this intrinsic oscillation. Other frequencies work as well, and may interact with other intrinsic oscillations. Stimulation at 8-25Hz also works to excite the alpha oscillation. Even though this is twice the intrinsic frequency of the system, local patches of the brain are hypothesized to respond only to every-other oscillation cycle, effectively oscillating at alpha. These frequencies vary from person to person, and there may be other processes contributing to flicker hallucinations that we have yet to understand.
+<br>
+Why does making visual cortex &quot;resonate&quot; with a stimulus lead to pattern formation? The technical details of why this might happen are beyond the scope of this article – they involve assumptions about how neurons in visual cortex talk to each other, and mathematics to test whether patterned modes are favorable when forcing visual cortex with a uniform periodic stimulus. The qualitative idea is actually quite simple. For analogy, consider shaking a tray of water up and down. Even though you are forcing the whole tray uniformly, if you hit the right frequencies, you can create standing waves in the tray of water. The visual cortex does something similar when you hit it with flickering light.
+<br>
+</body>
+</html>
+
+
+

@@ -1,0 +1,59 @@
+This is the source for The Goggles firmware.
+You need linux, avr-gcc, avrdude, and an AVR-ISP MkII to compile and upload.
+
+goggles-24.c
+
+Default flicker-hallucination program for AtTiny24. Compile with -Os in order
+for it to fit in memory. 
+
+goggles-24-calm.c
+
+This firmware opens with a series of constant color patches in case you just
+wanted a partial ganzfeld experience.
+
+
+Uploading instructions are in a comment in the header of the source. 
+The pinouts for connecting the AtTiny to an AVR ISP MkII are repeated below:
+
+    AtTiny24 pinout:
+                __ __
+    3     VCC -|  U  |- GND    1
+      BCK PB0 -|     |- PA0 G1
+      SHU PB1 -|     |- PA1 B1
+    4 RST PB3 -|     |- PA2 R1
+      PLY PB2 -|     |- PA3 G2 
+      FWD PA7 -|     |- PA4 B2 5
+    2 IND PA6 -|_____|- PA5 R2 6
+            
+    Programmer pinout, 6 pin:
+            
+    6 MISO +-+  VCC 3
+    5 SCK  + + MOSI 2 
+    4 RST  +-+  GND 1
+    
+    Programmer pinout, 10 pin:
+            
+    3 vcc  +-+   MOSI 2
+           + +    
+           + +]  RST  4 
+           + +   SCK  5 
+    1 gnd  +-+   MISO 6
+
+The script "go" does the following : 
+-- checks to see if your AVR is connected
+-- compiles the source code
+-- strips the source code down for transfer
+-- copies the source code to the AVR
+
+Things that might change :
+
+"go" assumes that you are using avrispmkII
+"go" assumes that you are using AtTiny24. Adjust flags accordingly if not.
+"go" assumes your programmer lies at /dev/ttyUSB0
+this may change, especially on macs.
+
+
+
+
+
+

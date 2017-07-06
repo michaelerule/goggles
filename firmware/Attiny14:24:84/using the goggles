@@ -1,0 +1,31 @@
+Here is a diagram of the circuit board :
+ 
+          R-GBR-GB
+ _________||||||||____
+|   ____  [  ][  ]    |
+|  Þ____| [__][__] (i)|
+|:                 (p)|
+| [×]  [«]  [=]  [»]  |
+|_____________________|
+
+The buttons are as follows, from left to right :
+
+[×] Shuffle      : if playing, toggle shuffled playback, else skip to random
+[«] Skip Back    : skips to the previous light patch
+[=] Play/Pause   : toggles automatic advancing through patches
+[»] Skip Forward : advances to the next light patch
+ 
+The LEDs indicate :
+ (i) -- indicator LED. ON if playing, flashing if playing+shuffle
+ (p) -- power LED, on if powered on. 
+ 
+When powered on, the goggles are paused at patch zero. Press play/pause to 
+begin the default light sequence. Press forward and back to move through the
+light patches when paused or playing. Press shuffle to skip to a random 
+patch when paused, or press shuffle when playing to toggle whether or not
+patches are played in a random order. When the goggles are paused, the
+indicator light will be off. When the goggles are playing, the indicator
+light will be on. When the goggles are playing back in a random order, the
+indicator light will be flashing. The light program loops around to the 
+beginning once it has reached the end. There are 123 patches, though not all
+are unique.
