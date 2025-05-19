@@ -1,0 +1,17 @@
+ 
+#!/usr/bin/env bash
+# See
+# https://github.com/arduino/Arduino/wiki/Building-Arduino
+ 
+sudo apt-get install -y git make gcc ant openjdk-8-jdk unzip
+sudo apt-get install openjfx
+
+WORKDIR="$HOME/Software/Github"
+echo $WORKDIR
+mkdir -p "$WORKDIR"
+cd "$WORKDIR"
+git clone --depth 1 https://github.com/arduino/Arduino.git
+cd Arduino/build
+ant dist
+and run
+

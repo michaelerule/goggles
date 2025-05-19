@@ -1,0 +1,32 @@
+
+#!/usr/bin/env bash
+exit -1
+
+# We are using the AVR ISP MKII
+#
+# My device uses this color convention: 
+# yellow [MISO  +   ] red
+# green  [SCK   MOSI] blue
+# white  [RST   -   ] black
+
+
+# AVRDude Tutorial
+# https://www.ladyada.net/learn/avr/avrdude.html
+
+avrdude -p ?
+
+# You should already be in the dialout group if working with Arduino
+sudo usermod -aG dialout ${USER}
+sudo apt install -y avrdude gcc-avr 
+
+PORT=/dev/ttyUSB0
+
+MEMORY=flash
+ACTION=r
+FILE=./readfrom.a
+FORMAT=i
+COMMAND=$MEMORY:$ACTION:$FILE:$FORMAT
+
+avrdude -v -n -P $PORT -U $COMMAND
+
+# TODO... later

@@ -7,8 +7,14 @@
  *  3 : Light program language
  *  4 : layout of the remainder of this document
  *  
+ *--- 0 : 20250503 Changes ------------------------------------------------------------
+ *  I'm revisiting this 15 years later, trying to get the old Arduino pro-mini goggles
+ *  builds to run again. 
  * 
- *--- 1 : Changes since last version -----------------------------------------------------------------------------------------------
+ *  
+ * 
+ * 
+ *--- 1 : Changes since last version --------------------------------------------------
  *  I made a few changes to the program, but the underlying structure is the same
  *  Superficial changes include making a new driver for the 4 character display, and
  *  defining some constants for use in the light program, to make things more readable.
@@ -32,8 +38,6 @@
  *  You no longer need to manually count the number of lights and change a constant
  *  to make the program work.
  *
- *   
- *
  *  I removed a feature from the rendering code that normalized the light
  *  intensity per number of lights in a patch. This fixes a bug where in order
  *  to, say, alternate red and green lights, you would need to define two lights.
@@ -54,7 +58,7 @@
  *  the light rendering will noticably stall.
  *
  *
- *--- 2 : A note about representing things that aren't integers on a 16 bit microcontroller ----------------------------------------
+ *--- 2 : A note about representing things that aren't ints on a 16 bit microcontroller
  *  The ATmega168 which drives your current version of the goggles can only perform 
  *  computations on up to 16 bit integers, no floating point is supported. 
  *  Because of this, in several points in the program, we use some number of low order bits
@@ -80,7 +84,7 @@
  *  is is convenient for generating sine wave output immediately suitable for display
  * 
  *  
- *--- 3 : Light Program Language ---------------------------------------------------------------------------------------------------
+ *--- 3 : Light Program Language ------------------------------------------------------
  * The goggles generate color based on a program stored in the flash array 
  * "program". This program consists of a series of patches. Patches are 
  * played in series, sequentially, until the end of the program. The program
@@ -142,7 +146,7 @@
  * 456  |_|
  *
  *
- *--- 4 : Layout of the remainder of this document ---------------------------------------------------------------------------------------------------
+ *--- 4 : Layout of the remainder of this document ------------------------------------
  * 
  * Light program readability #defines
  * Light program array
@@ -905,6 +909,8 @@ int strlen(char *str) {
   while (str[i++]!=0) len++ ;
   return len;
 } 
+
+char *string ="- - HEllo   CItIzEnS Of SPACEsHIp EArth - tHIs IS your CAptAIn - your CAptAIn IS DEAD - rELIGI0n IS A viruS of thE S0UL And SHALL bE ErAdICAtEd bEf0rE it CAn P0LLUtE Us All - It is LEFT to us - AlonE on EArth - to rebel Against the tyranny of the selfish replicators";
 
 /** setup_diplay initialized the LED display driver
  */
